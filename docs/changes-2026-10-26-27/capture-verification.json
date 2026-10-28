@@ -1,0 +1,17 @@
+{
+  "capturedAt": "2026-10-27T07:42:00.906Z",
+  "sampleData": true,
+  "requestId": "check_mvqdniwjri1eq1",
+  "browserErrors": [],
+  "checks": [
+    "Branding visible",
+    "PDF upload and extraction",
+    "Removed columns absent from table and XLSX",
+    "Right and left navigation from mid-text",
+    "Delete and checkbox navigation",
+    "Request snapshot and manager notification",
+    "Manager review and requester result notification",
+    "Automatic transfer to Closed Requests",
+    "Closed request retained after reload"
+  ]
+}

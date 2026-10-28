@@ -1,0 +1,365 @@
+[
+  {
+    "title": "Recent changes & user guide",
+    "tag": "PHOENIX ENGINEERS  /  PROJECTLEDGER",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Changes delivered on 26-27 October 2026. Prepared on 27 October 2026. This guide explains what changed and how to use the updated PDF-to-Excel review workflow."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Date",
+          "Changes delivered",
+          "Guide pages"
+        ],
+        "rows": [
+          [
+            "26 October",
+            "Phoenix Engineers branding; remaining Silverspace demo references replaced; dashboard helper text removed.",
+            "2"
+          ],
+          [
+            "26 October",
+            "Source pages and Review notes columns removed; left/right keyboard navigation added, including Delete.",
+            "3"
+          ],
+          [
+            "26 October",
+            "Row selection, project-manager check requests, notifications and Mark as checked buttons.",
+            "4-6"
+          ],
+          [
+            "27 October",
+            "Automatic movement from Active Requests to Closed Requests; saved completion history.",
+            "7"
+          ]
+        ],
+        "widths": [
+          85,
+          575,
+          97
+        ]
+      },
+      {
+        "type": "image",
+        "name": "01-sign-in",
+        "caption": "Figure 1. Current sign-in screen showing Phoenix Engineers.",
+        "width": 335,
+        "max_height": 192
+      },
+      {
+        "type": "p",
+        "text": "Screenshot note: images show the current app using a separate demo session and a sample purchase order. They illustrate the final behavior; they are not historical before/after captures or live company requests."
+      }
+    ]
+  },
+  {
+    "title": "Company name and dashboard cleanup",
+    "tag": "26 OCTOBER 2026",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "The organization name is now Phoenix Engineers. The change appears on sign-in, in the sidebar and wherever the organization name is used in reports. Existing saved demo data is updated when loaded."
+      },
+      {
+        "type": "image",
+        "name": "02-dashboard",
+        "caption": "Figure 2. Phoenix Engineers in the sidebar; the Committed card no longer shows the removed helper text.",
+        "width": 757.8897637795277,
+        "max_height": 205
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Previous display",
+          "Current behavior"
+        ],
+        "rows": [
+          [
+            "Silverspace",
+            "Phoenix Engineers"
+          ],
+          [
+            "Demo emails ending @silverspace.example",
+            "Demo emails now end @phoenixengineers.example, including saved references."
+          ],
+          [
+            "Open POs + approved claims",
+            "This explanatory text is removed from the Committed dashboard card. The financial calculation remains available."
+          ]
+        ],
+        "widths": [
+          270,
+          487
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          "Open http://localhost:5173 and sign in with a demo persona.",
+          "Check the sidebar company name and the dashboard cards.",
+          "Refresh an older open session to load the updated branding. A demo-data reset is not required."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Cleaner tables and keyboard navigation",
+    "tag": "26 OCTOBER 2026",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "The entire Source pages and Review notes columns have been removed from the extracted purchase-order item table and its Excel sheet. Other document sheets retain their own Page fields."
+      },
+      {
+        "type": "image",
+        "name": "03-table-start",
+        "caption": "Figure 3. Editable item fields at the beginning of the extracted table.",
+        "width": 757.8897637795277,
+        "max_height": 94
+      },
+      {
+        "type": "image",
+        "name": "04-select-row",
+        "caption": "Figure 4. Right-hand end of the table: Unloading point, Delete and the row-selection checkbox.",
+        "width": 757.8897637795277,
+        "max_height": 94
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Key / control",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Right Arrow",
+            "Moves to the next box in the same row, even when the text cursor is in the middle of a value."
+          ],
+          [
+            "Left Arrow",
+            "Moves to the previous box in the same row. The table scrolls to show the focused box."
+          ],
+          [
+            "End of the data fields",
+            "Navigation includes the Delete button and the Select for check checkbox, then stops at the row boundary."
+          ],
+          [
+            "Enter or Space on Delete",
+            "Deletes the row. Space on the checkbox selects or clears that row."
+          ]
+        ],
+        "widths": [
+          170,
+          587
+        ]
+      },
+      {
+        "type": "p",
+        "text": "To convert: open PDF to Excel, upload a document, choose recognition settings, then click Read document & create tables. Edit the values and use Download Excel (.xlsx) to keep the tables."
+      }
+    ]
+  },
+  {
+    "title": "Select rows and request a data check",
+    "tag": "26 OCTOBER 2026",
+    "blocks": [
+      {
+        "type": "image",
+        "name": "05-send-request",
+        "caption": "Figure 5. Request form with a project manager and a precise check instruction.",
+        "width": 400,
+        "max_height": 271
+      },
+      {
+        "type": "steps",
+        "items": [
+          "In an extracted table, select the blank checkbox at the end of each row that needs checking.",
+          "The Request data check button appears with the selected-row count. Click it.",
+          "Choose an active project manager. The current requester cannot select themselves.",
+          "In What should they check?, identify the row, column and value to verify; for example, Quantity 40.000 in row 1.",
+          "Click Send request. The app saves the selected rows and notifies the chosen manager."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Selection is per table and can continue across its pages. Clear selection removes the current selection. The checkbox and Delete controls are app actions, not extra columns in the downloaded workbook."
+      }
+    ]
+  },
+  {
+    "title": "Find and track an active request",
+    "tag": "26 OCTOBER 2026  /  CURRENT ORGANIZATION OF REQUESTS",
+    "blocks": [
+      {
+        "type": "image",
+        "name": "06-active-request",
+        "caption": "Figure 6. The selected request appears at the top of PDF to Excel, with a top Mark as checked button.",
+        "width": 757.8897637795277,
+        "max_height": 267
+      },
+      {
+        "type": "steps",
+        "items": [
+          "After sending, look at Active Requests above the upload area on PDF to Excel.",
+          "Use View request to reopen its details. The same link is available from its notification.",
+          "Read the saved rows, requester, assigned project manager, request date, instructions and current status."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "The request stores the values as they were when sent. Later edits to the conversion table do not silently change that saved snapshot. A reviewer can open the request without keeping the conversion screen open."
+      },
+      {
+        "type": "p",
+        "text": "The requester and assigned project manager can use Mark as checked at the top of the details or beside the request in the list. The following pages show the review and completion steps."
+      }
+    ]
+  },
+  {
+    "title": "Project-manager review and notifications",
+    "tag": "26 OCTOBER 2026",
+    "blocks": [
+      {
+        "type": "image",
+        "name": "07-manager-notification",
+        "caption": "Figure 7. The assigned manager receives Data check requested in Notifications.",
+        "width": 757.8897637795277,
+        "max_height": 47
+      },
+      {
+        "type": "image",
+        "name": "08-manager-review",
+        "caption": "Figure 8. Manager review with saved rows, review notes and the two result actions.",
+        "width": 757.8897637795277,
+        "max_height": 255
+      },
+      {
+        "type": "steps",
+        "items": [
+          "The chosen project manager opens Notifications and clicks Open on the data-check notification.",
+          "Compare the saved numbers with the source document and add any review notes.",
+          "Click Mark as checked when verified, or Needs correction with a specific row, column and correction note."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "The other person receives a result notification. Only the requester and assigned manager can complete the check; only the assigned manager can request corrections."
+      }
+    ]
+  },
+  {
+    "title": "Completed requests move to Closed Requests",
+    "tag": "27 OCTOBER 2026",
+    "blocks": [
+      {
+        "type": "image",
+        "name": "12-active-and-closed",
+        "caption": "Figure 9. The completed example has left Active Requests and is stored in Closed Requests.",
+        "width": 757.8897637795277,
+        "max_height": 205
+      },
+      {
+        "type": "steps",
+        "items": [
+          "Click Mark as checked when the request is done.",
+          "The request immediately leaves Active Requests and appears under Closed Requests. Open details move there too.",
+          "In Closed Requests, click View request to inspect the saved rows, instructions, result, completion author and date."
+        ]
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Status",
+          "Where it appears"
+        ],
+        "rows": [
+          [
+            "Pending / Needs correction",
+            "Active Requests. Requests needing correction stay active until checked."
+          ],
+          [
+            "Checked",
+            "Closed Requests. This is the app status used by Mark as checked to indicate the request is done."
+          ],
+          [
+            "Done / Closed / Completed (if already stored)",
+            "Closed Requests. Existing completed records are recognized automatically."
+          ]
+        ],
+        "widths": [
+          260,
+          497
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Closed requests are ordered by completion date, newest first. They remain accessible after a page reload; completing a request archives it rather than deleting its saved details."
+      }
+    ]
+  },
+  {
+    "title": "Quick walkthrough and verification",
+    "tag": "REFERENCE  /  PREPARED 27 OCTOBER 2026",
+    "blocks": [
+      {
+        "type": "image",
+        "name": "10-requester-result",
+        "caption": "Figure 10. The requester receives the completed check result in Notifications.",
+        "width": 757.8897637795277,
+        "max_height": 47
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Check performed",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Automated project checks",
+            "31 tests passed across five test files; the production build passed."
+          ],
+          [
+            "Real browser walkthrough",
+            "Uploaded the sample PDF; extracted item rows; selected a row; sent a manager request; opened the notification and completed the review."
+          ],
+          [
+            "Output and keyboard checks",
+            "Removed columns absent from the on-screen table and downloaded XLSX; both arrows work from mid-text; Delete and checkbox are reachable."
+          ],
+          [
+            "Closure and persistence",
+            "The completed row moved to Closed Requests; the active list was empty; closed details remained after reload."
+          ]
+        ],
+        "widths": [
+          185,
+          572
+        ]
+      },
+      {
+        "type": "steps",
+        "items": [
+          "Requester: convert a PDF, select the relevant rows, choose a project manager, write the check instruction and send.",
+          "Manager: open Notifications, review the saved rows and mark Checked or request corrections.",
+          "Requester: read the result notification and find finished items in Closed Requests."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Demo scope: requests and notifications are stored in this browser. To try both roles, use Switch user in the same browser. This build does not send email or synchronize requests across devices."
+      },
+      {
+        "type": "p",
+        "text": "Keep your work: conversion-table edits remain in memory while that section is open. Download the Excel file before leaving it. Saved requests preserve selected values, not a shared copy of the original PDF; keep the source document available for comparison."
+      },
+      {
+        "type": "p",
+        "text": "Included example files: sample-purchase-order.pdf and sample-converted-tables.xlsx. Screenshot verification is recorded in capture-verification.json. No existing user data was used or changed to produce this guide."
+      }
+    ]
+  }
+]
